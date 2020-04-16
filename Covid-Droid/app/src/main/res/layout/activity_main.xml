@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:srcCompat="@drawable/background"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="3dp"
-        android:layout_height="7"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+    <com.szugyi.circlemenu.view.CircleLayout
+        android:id="@+id/circle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:onClick="goto_info"
+        android:layout_above="@+id/selected_textView"
+        android:layout_gravity="center"
+        tools:ignore="UnknownId">
+        <include layout="@layout/menu_items" />
+    </com.szugyi.circlemenu.view.CircleLayout>
 
+    <ImageView
+        style="@style/button"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:background="@drawable/share"
+        android:maxHeight="5dp"
+        android:onClick="goto_share" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
-    </LinearLayout>
+    <ImageView
+        style="@style/button"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:background="@drawable/about"
+        android:maxHeight="5dp"
+        android:onClick="goto_about" />
 
-
-</RelativeLayout>
+</GridLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00aaf9"
+    android:clickable="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        style="@android:style/Animation.Translucent"
+        android:layout_above="@+id/versionButton">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/appLongDescriptionLabel"
+                 android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:textSize="17sp"
+                android:textColor="#FFF"
+                android:gravity="center_horizontal|left"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/Initiateur"
+                 android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:textSize="15sp"
+                android:textColor="#FFF"
+                android:gravity="center_horizontal|left"
+                android:layout_alignTop="@+id/appLongDescriptionLabel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/autor"
+                 android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/translater"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="false"
+                android:textIsSelectable="false"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/contributor"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/coronavirus" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/versionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/button_play"
+        android:text="@string/version_button_default_label" />
+
+</RelativeLayout>
