@@ -9,6 +9,7 @@ public class MainActivity extends Base  {
     private final static String TAG = Constants.getLogTag("MainActivity");
 
     @Override
+    //pour onclick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -26,7 +27,7 @@ public class MainActivity extends Base  {
         callUrgencyDialog(MainActivity.this);
     }
 
-    public void goto_sensib(View view) {
+    public void goto_auto_sensib(View view) {
         //finish();
         Intent intent = new Intent(
                 this, AudoSensibilization.class);
@@ -46,6 +47,15 @@ public class MainActivity extends Base  {
                 getApplicationContext(),
                 News.class);
         startActivity(intent);
+    }
+
+    public void goto_sensib(View view) {
+        //finish();
+        Intent intent = new Intent(
+                getApplicationContext(),
+                Question.class);
+        startActivity(intent);
+
     }
 
     public void goto_share(View view) {

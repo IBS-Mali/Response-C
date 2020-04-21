@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Responses">
+
+    <TextView
+        android:id="@+id/respo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:gravity="center_horizontal"
+        android:text="Origine et Definition du Coronavirus"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@android:style/Animation.Translucent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_below="@+id/respo">
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="30dp"
+            android:gravity="center_horizontal" />
+
+    </ScrollView>
+
+</LinearLayout>
