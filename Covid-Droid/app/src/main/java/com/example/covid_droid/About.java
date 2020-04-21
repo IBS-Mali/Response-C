@@ -13,6 +13,7 @@ import android.widget.TextView;
  */
 public class About extends Base {
 
+    private final static String TAG = Constants.getLogTag("About");
     private Button versionButton;
 
     @Override

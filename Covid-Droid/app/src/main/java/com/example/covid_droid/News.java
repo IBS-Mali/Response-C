@@ -1,39 +1,21 @@
 package com.example.covid_droid;
 
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.Html;
-import android.util.Log;
-import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
-
-import java.net.URL;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 
 public class News extends Base {
+
+    private final static String TAG = Constants.getLogTag("News");
 
     private ListView mListView;
     //private ArrayAdapter<NewsData> listAdapter ;
     private SimpleAdapter adapter;
 
-	private final static String TAG = Constants.getLogTag("Home");
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

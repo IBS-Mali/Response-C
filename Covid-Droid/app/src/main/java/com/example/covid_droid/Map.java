@@ -14,6 +14,8 @@ import android.webkit.WebViewClient;
 
 public class Map extends Base {
 
+    private final static String TAG = Constants.getLogTag("Map");
+
     private WebView webView;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -57,9 +59,9 @@ public class Map extends Base {
 
                 }
             });
-            webView.loadUrl("https://infographics.channelnewsasia.com/covid-19/map.html");
+//            webView.loadUrl("https://infographics.channelnewsasia.com/covid-19/map.html");
 //            webView.loadUrl("https://datawrapper.dwcdn.net/RVr5t/57/");
-//            webView.loadUrl("https://windy.app/coronavirus_map");
+            webView.loadUrl("https://windy.app/coronavirus_map");
         }
 
     }
