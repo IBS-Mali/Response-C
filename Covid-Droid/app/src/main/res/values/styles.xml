@@ -17,4 +17,8 @@
         <item name="android:padding">5dp</item>
     </style>
 
+    <style name="Fade">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
 </resources>

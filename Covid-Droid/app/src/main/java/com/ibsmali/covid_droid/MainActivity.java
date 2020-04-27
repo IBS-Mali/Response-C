@@ -1,11 +1,12 @@
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends Base  {
+
+    private final static String TAG = Constants.getLogTag("MainActivity");
 
     @Override
     //pour onclick
@@ -13,6 +14,7 @@ public class MainActivity extends Base  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     public void goto_map(View view) {
         //finish();
         Intent intent = new Intent(
@@ -25,6 +27,12 @@ public class MainActivity extends Base  {
         callUrgencyDialog(MainActivity.this);
     }
 
+    public void goto_auto_sensib(View view) {
+        //finish();
+        Intent intent = new Intent(
+                this, AudoSensibilization.class);
+        startActivity(intent);
+    }
 
     public void goto_about(View view) {
         //finish();
@@ -35,7 +43,6 @@ public class MainActivity extends Base  {
     }
 
     public void goto_info(View view) {
-        //finish();
         Intent intent = new Intent(
                 getApplicationContext(),
                 News.class);

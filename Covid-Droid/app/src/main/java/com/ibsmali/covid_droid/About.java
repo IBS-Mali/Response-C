@@ -1,4 +1,4 @@
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,6 +13,7 @@ import android.widget.TextView;
  */
 public class About extends Base {
 
+    private final static String TAG = Constants.getLogTag("About");
     private Button versionButton;
 
     @Override

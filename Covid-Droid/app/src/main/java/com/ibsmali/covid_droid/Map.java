@@ -1,4 +1,4 @@
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 
 import android.app.AlertDialog;
@@ -13,6 +13,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class Map extends Base {
+
+    private final static String TAG = Constants.getLogTag("Map");
 
     private WebView webView;
 
@@ -57,11 +59,11 @@ public class Map extends Base {
 
                 }
             });
-//             webView.loadUrl("https://infographics.channelnewsasia.com/covid-19/map.html");
+//            webView.loadUrl("https://infographics.channelnewsasia.com/covid-19/map.html");
              webView.loadUrl("https://app.developer.here.com/coronavirus");
-            // webView.loadUrl("https://www.articque.com/epidemie-de-coronavirus");
-            // webView.loadUrl("https://coronavirus.app/map");
-            // webView.loadUrl("https://www.arcgis.com");
+//            webView.loadUrl("https://www.articque.com/epidemie-de-coronavirus");
+//            webView.loadUrl("https://coronavirus.app/map");
+//            webView.loadUrl("https://www.arcgis.com");
 //            webView.loadUrl("https://datawrapper.dwcdn.net/RVr5t/57/");
 //            webView.loadUrl("https://windy.app/coronavirus_map");
         }
