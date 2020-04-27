@@ -49,6 +49,9 @@ public class Responses extends AppCompatActivity {
         };if (q.equals(Constants.Q9)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R9);
+        };if (q.equals(Constants.Q10)){
+            Toast.makeText(this,q, LENGTH_LONG);
+            rep.setText(R.string.R10);
         };
 
     }

@@ -22,17 +22,16 @@
         style="@android:style/Animation.Translucent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="130dp"
-        android:layout_marginRight="130dp"
         android:layout_below="@+id/respo">
+
 
         <TextView
             android:id="@+id/response"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:text=""
-            android:textSize="30dp"
-            android:gravity="center_horizontal" />
+            android:textSize="30dp" />
 
     </ScrollView>
 

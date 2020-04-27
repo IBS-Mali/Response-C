@@ -17,6 +17,8 @@ public class Constants {
     public static final String Q7 = "q7";
     public static final String Q8 = "q8";
     public static final String Q9 = "q9";
+    public static final String Q10 ="q10";
+
     public static final String getLogTag(String activity) {
         return String.format("COVID-19Log-%s", activity);
     }
