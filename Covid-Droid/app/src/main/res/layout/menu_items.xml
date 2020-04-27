@@ -29,7 +29,6 @@
         android:id="@+id/audioSensib"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/sansib"
         android:elevation="2dp"
         android:onClick="goto_auto_sensib"
         circle:name="cloud"

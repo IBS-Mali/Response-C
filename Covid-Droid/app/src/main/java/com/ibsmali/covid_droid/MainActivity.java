@@ -1,4 +1,4 @@
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 import android.content.Intent;
 import android.os.Bundle;

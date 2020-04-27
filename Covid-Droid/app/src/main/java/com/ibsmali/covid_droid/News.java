@@ -1,4 +1,4 @@
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;

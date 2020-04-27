@@ -2,7 +2,7 @@
  * Created by VETRI on 05-03-2017.
  */
 
-package com.example.covid_droid;
+package com.ibsmali.covid_droid;
 
 import android.util.Log;
 
