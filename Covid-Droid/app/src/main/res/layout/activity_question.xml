@@ -101,10 +101,7 @@
 
             <Button
                 android:id="@+id/textView10"
-                android:layout_width="445dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="9"
+                style="@style/button_qz"
                 android:background="@drawable/buttonq"
                 android:gravity="center_horizontal"
                 android:onClick="goto_resp_q10"
