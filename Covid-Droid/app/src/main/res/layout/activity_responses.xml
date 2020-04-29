@@ -19,7 +19,6 @@
         android:layout_height="651dp"
         android:layout_margin="20dp"
         android:layout_below="@+id/respo">
-
         <TextView
             android:id="@+id/response"
             android:layout_width="match_parent"
@@ -27,10 +26,7 @@
             android:gravity="center_horizontal"
             android:text=""
             android:textSize="30dp" />
-
-    </ScrollView>
-
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -63,17 +59,17 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_vertical|center_horizontal" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/audioLinearLayout"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingRight="5dp"
-        android:layout_alignTop="@+id/linearLayout"
-        android:paddingLeft="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/audioLinearLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="5dp"
+            android:layout_alignTop="@+id/linearLayout"
+            android:paddingLeft="5dp">
         <ImageButton
             android:id="@+id/pauseButton"
             android:layout_width="wrap_content"
@@ -92,4 +88,6 @@
             android:onClick="play"
             android:src="@android:drawable/ic_media_play" />
     </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
