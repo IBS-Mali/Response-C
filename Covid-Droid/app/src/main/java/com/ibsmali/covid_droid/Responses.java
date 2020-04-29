@@ -72,16 +72,17 @@ public class Responses extends Base {
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R1);
             title_resp.setText(R.string.Q1);
-            imageView.setImageResource(R.drawable.apropos);
+            imageView.setImageResource(R.drawable.orig);
         }; if (q.equals(Constants.Q2)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R2);
             title_resp.setText(R.string.Q2);
-            imageView.setImageResource(R.drawable.partage);
+            imageView.setImageResource(R.drawable.covider);
         };if (q.equals(Constants.Q3)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R3);
             title_resp.setText(R.string.Q3);
+            imageView.setImageResource(R.drawable.simpto);
         };if (q.equals(Constants.Q4)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R4);
@@ -89,11 +90,13 @@ public class Responses extends Base {
         };if (q.equals(Constants.Q5)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R5);
+            imageView.setImageResource(R.drawable.protect);
             title_resp.setText(R.string.Q5);
         };if (q.equals(Constants.Q6)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R6);
             title_resp.setText(R.string.Q6);
+            imageView.setImageResource(R.drawable.inquietude);
         };if (q.equals(Constants.Q7)){
             Toast.makeText(this,q, LENGTH_LONG);
             title_resp.setText(R.string.Q7);
@@ -106,6 +109,12 @@ public class Responses extends Base {
             Toast.makeText(this,q, LENGTH_LONG);
             title_resp.setText(R.string.Q9);
             rep.setText(R.string.R9);
+            imageView.setImageResource(R.drawable.temps);
+        };if (q.equals(Constants.Q10)){
+            Toast.makeText(this,q, LENGTH_LONG);
+            title_resp.setText(R.string.Q10);
+            imageView.setImageResource(R.drawable.ani);
+            rep.setText(R.string.R10);
         };
 
         mediaPlayer = mediaPlayer.create(Responses.this, Uri.parse(selectSong));
