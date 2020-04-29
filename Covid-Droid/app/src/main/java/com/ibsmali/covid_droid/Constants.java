@@ -1,7 +1,7 @@
 package com.ibsmali.covid_droid;
 
 /**
- * Created by fad on 21/11/14.
+ * Created by fad
  */
 
 

@@ -4,26 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
     android:orientation="vertical"
     tools:context=".Responses">
 
     <TextView
+        style="@style/header_ttle"
         android:id="@+id/respo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:gravity="center_horizontal"
-        android:text="Origine et Definition du Coronavirus"
-        android:textAlignment="center"
-        android:textSize="25dp" />
+        android:text="Origine et Definition du Coronavirus" />
 
     <ScrollView
         android:id="@+id/scrollView"
         style="@android:style/Animation.Translucent"
         android:layout_width="match_parent"
         android:layout_height="651dp"
+        android:layout_margin="20dp"
         android:layout_below="@+id/respo">
 
         <TextView

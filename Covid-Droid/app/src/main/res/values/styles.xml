@@ -17,8 +17,41 @@
         <item name="android:padding">5dp</item>
     </style>
 
+    <style name="header_ttle">
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#D52121</item>
+    </style>
+    <style name="button_qz">
+        <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">10dp</item>
+    </style>
     <style name="Fade">
         <item name="android:windowEnterAnimation">@anim/fadein</item>
         <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+
+    <style name="button_s" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#104A78</item>
+        <item name="android:shadowColor">#B00C0C</item>
+        <item name="android:shadowDx">10</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">50</item>
+        <item name="android:textSize">1dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
     </style>
 </resources>
