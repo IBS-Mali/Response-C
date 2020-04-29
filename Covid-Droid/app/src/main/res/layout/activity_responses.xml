@@ -19,24 +19,6 @@
         android:textAlignment="center"
         android:textSize="25dp" />
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        style="@android:style/Animation.Translucent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/respo">
-
-
-        <TextView
-            android:id="@+id/response"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:text=""
-            android:textSize="30dp" />
-
-    </ScrollView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,4 +81,22 @@
             android:onClick="play"
             android:src="@android:drawable/ic_media_play" />
     </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@android:style/Animation.Translucent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/respo">
+
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="30dp" />
+
+    </ScrollView>
+
 </LinearLayout>

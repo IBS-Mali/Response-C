@@ -94,7 +94,6 @@ public class AudoSensibilization extends Base {
                     JSONObject jsonObj = new JSONObject(jsonStr);
                     // Getting JSON Array node
                     JSONArray files = jsonObj.getJSONArray("files");
-                    List<AudioData> audio_data = new ArrayList<>();
                     // looping through All Contacts
                     for (int i = 0; i < files.length(); i++) {
                         JSONObject c = files.getJSONObject(i);
