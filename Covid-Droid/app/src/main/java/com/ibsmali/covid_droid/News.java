@@ -30,7 +30,7 @@ public class News extends Base {
         anim.setRepeatCount(Animation.INFINITE);
         myText.startAnimation(anim);
 //        setupUI();
-//        new GetRssFeed().execute("https://facebook-rss.herokuapp.com/rss/130149083720242");
+//        new GetRssFeed().execute("http://fetchrss.com/rss/5ea853948a93f8ae288b45685ea8536d8a93f824278b4567.xml");
 
         }
 

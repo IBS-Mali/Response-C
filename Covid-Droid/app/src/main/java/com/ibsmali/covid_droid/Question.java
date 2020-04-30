@@ -100,4 +100,11 @@ public class Question extends Base {
         intent.putExtra("question", Constants.Q9);
         startActivity(intent);
     }
+    public void goto_resp_q10(View view) {
+        Intent intent = new Intent(
+                getApplicationContext(),
+                Responses.class);
+        intent.putExtra("question", Constants.Q10);
+        startActivity(intent);
+    }
 }

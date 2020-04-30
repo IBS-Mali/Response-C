@@ -136,8 +136,6 @@ public class Base extends Activity {
                 input.close();
                 song.setFile_url(pathFile);
                 song.save();
-                Log.d(TAG, "END-DL  " + pathFile);
-                Log.d(TAG, "song :" + song.getFile_url() + " ID :"+ song.getId());
 
             } catch (Exception e) {
                 Log.d("E Error: ", e.getMessage());
