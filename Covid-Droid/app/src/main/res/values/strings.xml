@@ -99,4 +99,6 @@
     <string name="R9">La période d’incubation est le temps qui s’écoule entre l’infection et l’apparition des symptômes de la maladie. On estime actuellement que la période d’incubation de la COIVD-19 dure de 1 à 14 jours et le plus souvent autour de cinq jours. Ces estimations seront actualisées à mesure que de nouvelles données seront disponibles.</string>
     <string name="Q10">Mon animal domestique peut-il me transmettre la COVID-19 ?</string>
     <string name="R10">Il y a eu un cas d’infection chez un chien à Hong Kong mais, à ce jour, rien ne prouve que les animaux de compagnie, tels que les chiens ou les chats, peuvent transmettre la COVID-19. La maladie se transmet principalement par les gouttelettes expulsées par les personnes infectées quand elles toussent, éternuent ou parlent. Pour vous protéger, lavez-vous les mains fréquemment et soigneusement.</string>
+    <string name="S">La COVID-19 est la maladie infectieuse causée par le dernier coronavirus qui a été découvert. Ce nouveau virus et cette maladie étaient inconnus avant l’apparition de la flambée à Wuhan (Chine) en décembre 2019.  Alors pour une meilleure sensibilisation vous pouvez accéder aux différents moyens de sensibilisations en un seul clique.</string>
+    <string name="audio"></string>
 </resources>

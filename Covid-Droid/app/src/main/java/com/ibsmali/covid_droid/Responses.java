@@ -87,6 +87,7 @@ public class Responses extends Base {
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R4);
             title_resp.setText(R.string.Q4);
+            imageView.setImageResource(R.drawable.contactt);
         };if (q.equals(Constants.Q5)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R5);
@@ -101,10 +102,12 @@ public class Responses extends Base {
             Toast.makeText(this,q, LENGTH_LONG);
             title_resp.setText(R.string.Q7);
             rep.setText(R.string.R7);
+            imageView.setImageResource(R.drawable.foule);
         };if (q.equals(Constants.Q8)){
             Toast.makeText(this,q, LENGTH_LONG);
             rep.setText(R.string.R8);
             title_resp.setText(R.string.Q8);
+            imageView.setImageResource(R.drawable.risque);
         };if (q.equals(Constants.Q9)){
             Toast.makeText(this,q, LENGTH_LONG);
             title_resp.setText(R.string.Q9);

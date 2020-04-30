@@ -40,7 +40,7 @@
             style="@style/button_meu"
             android:background="@drawable/sansib"
             android:elevation="2dp"
-            android:onClick="goto_sensib"
+            android:onClick="goto_sen"
             android:src="@drawable/sansib" />
 
         <com.szugyi.circlemenu.view.CircleImageView

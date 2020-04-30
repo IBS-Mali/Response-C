@@ -71,4 +71,11 @@ public class MainActivity extends Base  {
             //e.toString();
         }
     }
+
+    public void goto_sen(View view) {
+        Intent intent = new Intent(
+                getApplicationContext(),
+                SensibilisationActivity.class);
+        startActivity(intent);
+    }
 }
