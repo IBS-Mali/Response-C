@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="#4CAF50"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#830E0E0E"
+        android:weightSum=".40"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/covid19"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_covid19" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum=".5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/name"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Veuillez sélectionner une langue"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <SeekBar
+                    android:layout_margin="5dp"
+                    android:id="@+id/seekBar"
+                    android:progressDrawable="@drawable/seekbar_bg"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:outlineAmbientShadowColor="#FFFFFF"
+                    android:indeterminate="false"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/audioLinearLayout"
+                    android:layout_toRightOf="@+id/audioLinearLayout"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/audioLinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/startTimeLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#FFF"
+                            android:gravity="start"
+                            android:text="@string/inital_Time"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/audioLinearL"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/pauseButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/seekBar1"
+                            android:background="@drawable/btt_menu"
+                            android:onClick="pause"
+                            android:src="@android:drawable/ic_media_pause" />
+
+                        <ImageButton
+                            android:id="@+id/playButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignTop="@+id/pewImageButton"
+                            android:layout_toRightOf="@+id/pewImageButton"
+                            android:background="@drawable/btt_menu"
+                            android:onClick="play"
+                            android:src="@android:drawable/ic_media_play" />
+                        <ImageButton
+                            android:id="@+id/song_dl"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/btt_menu"
+                            android:src="@android:drawable/stat_sys_download"
+                            android:onClick="goto_dl" />
+                    </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/audioLinear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/endTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight=".03"
+                            android:gravity="end"
+                            android:text="@string/inital_Time"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum=".60"
+        android:orientation="vertical">
+        <TextView
+            android:shadowColor="#000000"
+            android:shadowRadius="2"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#97000000"
+            android:textColor="#FFFFFF"
+            android:text="Liste des langues"/>
+        <ListView
+            android:textColor="#FFFFFF"
+            android:id="@+id/languageLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:scrollingCache="false" />
+    </LinearLayout>
+</LinearLayout>

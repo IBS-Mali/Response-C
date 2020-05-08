@@ -30,7 +30,7 @@ public class MainActivity extends Base  {
     public void goto_auto_sensib(View view) {
         //finish();
         Intent intent = new Intent(
-                this, AudoSensibilization.class);
+                this, SelectLanguage.class);
         startActivity(intent);
     }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_"
     tools:context=".Question">
     <ScrollView
         android:layout_width="match_parent"
@@ -18,95 +19,64 @@
 
          <TextView
              android:id="@+id/textView"
-             style="@style/header_ttle"
+             style="@style/header_title"
              android:text="Sensibilisation sur la COVID-19"
              android:textColor="#fff" />
 
             <Button
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
                 android:id="@+id/textView1"
-                android:gravity="center"
                 android:text="@string/Q1"
-                android:textSize="20dp"
                 android:onClick="goto_resp_q1"/>
             <Button
                 style="@style/button_qz"
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q2"
-                android:text="@string/Q2"
-                android:textSize="20dp" />
+                android:text="@string/Q2"/>
             <Button
                 android:id="@+id/textView3"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q3"
-                android:text="@string/Q3"
-                android:textSize="20dp" />
+                android:text="@string/Q3" />
             <Button
                 android:id="@+id/textView4"
                 style="@style/button_qz"
                 android:onClick="goto_resp_q4"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
-                android:text="@string/Q4"
-                android:textSize="20dp" />
+                android:text="@string/Q4" />
             <Button
                 android:id="@+id/textView5"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q5"
-                android:text="@string/Q5"
-                android:textSize="20dp" />
+                android:text="@string/Q5" />
             <Button
                 android:id="@+id/textView6"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q6"
-                android:text="@string/Q6"
-                android:textSize="20dp" />
+                android:text="@string/Q6" />
 
             <Button
                 android:id="@+id/textView7"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q7"
-                android:text="@string/Q7"
-                android:textSize="20dp" />
+                android:text="@string/Q7" />
 
             <Button
                 android:id="@+id/textView8"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:text="@string/Q8"
-                android:onClick="goto_resp_q8"
-                android:textSize="20dp" />
+                android:onClick="goto_resp_q8"/>
 
             <Button
                 android:id="@+id/textView9"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:text="@string/Q9"
-                android:onClick="goto_resp_q9"
-                android:textSize="20dp" />
+                android:onClick="goto_resp_q9" />
 
             <Button
                 android:id="@+id/textView10"
                 style="@style/button_qz"
-                android:background="@drawable/buttonq"
-                android:gravity="center_horizontal"
                 android:onClick="goto_resp_q10"
-                android:text="@string/Q10"
-                android:textSize="20dp" />
+                android:text="@string/Q10" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

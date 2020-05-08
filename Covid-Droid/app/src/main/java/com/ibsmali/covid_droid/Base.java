@@ -84,31 +84,42 @@ public class Base extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+
+            song = AudioData.findById(AudioData.class, identifier);
             pd = new ProgressDialog(Base.this);
-            pd.setTitle("Processing...");
-            pd.setMessage("Please wait.");
+            pd.setTitle("Telechargement cours ...");
+            pd.setMessage("Recupération du fiche " + song.getName());
             pd.setMax(100);
+            pd.closeOptionsMenu();
             pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            pd.setCancelable(true);
+            pd.setCancelable(false);
             pd.show();
+        }
+
+        public String getPathFile(String file_name) {
+
+            packageName = getPackageName();
+
+            File sd = Environment.getExternalStorageDirectory();
+            File pathFolder = new File(sd.getAbsolutePath() + "/" + packageName);
+            if(!pathFolder.exists()){
+                pathFolder.mkdirs();
+            }
+            pathFile = pathFolder + File.separator + file_name;
+            return pathFile;
         }
 
         @Override
         protected String doInBackground(String... f_url) {
             int count;
-            packageName = getPackageName();
             song = AudioData.findById(AudioData.class, identifier);
+            Log.d(TAG, "URL : " + f_url + " Song : " + song.getName() );
+
             try {
-                File sd = Environment.getExternalStorageDirectory();
-                File pathFolder = new File(sd.getAbsolutePath() + "/" + packageName);
-                if(!pathFolder.exists()){
-                    pathFolder.mkdirs();
-                }
-                pathFile = pathFolder + File.separator + song.getName();
+                pathFile = getPathFile(song.getName());
                 URL url = new URL(f_url[0]);
                 URLConnection connection = url.openConnection();
                 connection.connect();
-
                 // this will be useful so that you can show a tipical 0-100%
                 // progress bar
                 int lengthOfFile = connection.getContentLength();
@@ -155,13 +166,11 @@ public class Base extends Activity {
             if (pd!=null) {
                 pd.dismiss();
             }
-            StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-            StrictMode.setVmPolicy(builder.build());
-            Intent i = new Intent(Intent.ACTION_VIEW);
-
-            i.setDataAndType(Uri.fromFile(new File(file_url)), "application/vnd.android.package-archive" );
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            getApplicationContext().startActivity(i);
+            song.setIs_download(true);
+            song.save();
+            //
+            finish();
+            startActivity(getIntent());
 
         }
 

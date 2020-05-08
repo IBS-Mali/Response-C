@@ -23,7 +23,7 @@ public class SensibilisationActivity extends Base {
     public void goto_audio(View view) {
         Intent intent = new Intent(
                 getApplicationContext(),
-                AudoSensibilization.class);
+                SelectLanguage.class);
         intent.putExtra("Audiosensibilisation",Constants.audio);
         startActivity(intent);
     }

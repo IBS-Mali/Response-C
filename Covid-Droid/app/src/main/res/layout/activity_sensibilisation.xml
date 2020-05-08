@@ -1,70 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SensibilisationActivity">
-    <ScrollView
+    android:orientation="vertical"
+    tools:context=".SensibilisationActivity"
+    android:background="@drawable/background_">
+    <TextView
+        android:id="@+id/text"
+        style="@style/header_title"
+        android:text="Mode de Sensibilisation sur la COVID-19"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/S"/>
+    <ScrollView
         android:id="@+id/scrollView"
         style="@android:style/Animation.Translucent"
-        android:layout_above="@+id/versionButton">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-            <TextView
-                style="@style/header_ttle"
-                android:text="Mode de Sensibilisation sur la COVID-19"
-                android:textColor="#fff" /> />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/S"
-                android:textSize="15dp" />
-
-            <ImageView
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="156dp"
-                android:layout_marginTop="19dp"
-                android:onClick="goto_quest"
-                android:src="@drawable/boock" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question et Reponse de sensibilisation"
-                android:textAlignment="center"
-                android:textSize="20dp" />
-
-            <ImageView
+                android:background="@drawable/btt_menu"
+                android:drawableRight="@drawable/reading"
+                android:onClick="goto_quest"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="Question et Reponse de sensibilisation" />
+            <Button
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="129dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/audioo"
-                android:onClick="goto_audio"/>
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Audio de sensilisation"
-                android:textAlignment="center"
-                android:textSize="20dp" />
-
+                android:layout_margin="10dp"
+                android:background="@drawable/btt_menu"
+                android:drawableLeft="@drawable/listener"
+                android:onClick="goto_audio"
+                android:padding="10dp"
+                android:text="Audio de sensilisation" />
         </LinearLayout>
     </ScrollView>
-
-
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ibsmali.covid_droid">
+    package="com.ibsmali.covid_droid" >
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission
@@ -23,11 +23,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".SensibilisationActivity"></activity>
+        android:usesCleartextTraffic="true" >
 
         <meta-data
             android:name="DATABASE"
@@ -42,17 +41,21 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.ibsmali" />
 
-        <activity android:name=".AudoSensibilization" />
-        <activity android:name=".Responses" />
-        <activity android:name=".Question" />
-        <activity android:name=".Map" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Map" />
+        <activity android:name=".Question" />
+        <activity android:name=".Responses" />
+        <activity android:name=".SelectLanguage"
+            android:screenOrientation="fullSensor"
+            android:configChanges="orientation"/>
+        <activity android:name=".SensibilisationActivity" />
         <activity android:name=".About" />
         <activity android:name=".News" />
     </application>

@@ -5,12 +5,12 @@
     <string name="version_button_label">Version %1$s (vérifier mises à jour)</string>
     <string name="orange">Orange</string>
     <string name="malitel">Malitel</string>
-    <string name="num_malitel">36061</string>
+    <string name="num_malitel">37821</string>
     <string name="num_orange">36061</string>
     <string name="action_settings">Settings</string>
     <string name="play_str">PLAY</string>
     <string name="pause_str">PAUSE</string>
-    <string name="inital_Time">0 mn, 0 s</string>
+    <string name="inital_Time">0:0</string>
     <string name="l1">Français</string>
     <string name="l2">Bambara</string>
     <string name="l3">Soninké</string>
@@ -101,4 +101,6 @@
     <string name="R10">Il y a eu un cas d’infection chez un chien à Hong Kong mais, à ce jour, rien ne prouve que les animaux de compagnie, tels que les chiens ou les chats, peuvent transmettre la COVID-19. La maladie se transmet principalement par les gouttelettes expulsées par les personnes infectées quand elles toussent, éternuent ou parlent. Pour vous protéger, lavez-vous les mains fréquemment et soigneusement.</string>
     <string name="S">La COVID-19 est la maladie infectieuse causée par le dernier coronavirus qui a été découvert. Ce nouveau virus et cette maladie étaient inconnus avant l’apparition de la flambée à Wuhan (Chine) en décembre 2019.  Alors pour une meilleure sensibilisation vous pouvez accéder aux différents moyens de sensibilisations en un seul clique.</string>
     <string name="audio"></string>
+    <string name="title_language_list">Items</string>
+    <string name="title_language_detail">language Detail</string>
 </resources>

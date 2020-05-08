@@ -7,7 +7,6 @@
 <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
 <!--        <item name="colorAccent">@color/colorAccent</item>-->
     </style>
-
     <style name="button_meu">
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="android:layout_width" >80dp</item>
@@ -23,7 +22,7 @@
         <item name="android:padding">5dp</item>
     </style>
 
-    <style name="header_ttle">
+    <style name="header_title">
         <item name="android:layout_width" >match_parent</item>
         <item name="android:layout_height" >wrap_content</item>
         <item name="android:layout_margin">2dp</item>
@@ -40,8 +39,10 @@
         <item name="android:layout_width" >match_parent</item>
         <item name="android:layout_height" >wrap_content</item>
         <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
         <item name="android:textColor">#fff</item>
-        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/buttonq</item>
     </style>
     <style name="Fade">
         <item name="android:windowEnterAnimation">@anim/fadein</item>
@@ -60,5 +61,19 @@
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
         <item name="maxButtonHeight">2dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AHorizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
     </style>
 </resources>

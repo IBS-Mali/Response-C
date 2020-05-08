@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_"
     tools:context=".Responses">
 
     <TextView
-        style="@style/header_ttle"
+        style="@style/header_title"
         android:id="@+id/title_resp"
         android:text="Origine et Definition du Coronavirus" />
 
@@ -28,7 +29,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="00dp"
                 android:layout_margin="10dp" />
             <TextView
                 android:id="@+id/response"
@@ -36,82 +36,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/about_long_description"
                 />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="#eee"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <SeekBar
-                    android:id="@+id/seekBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:indeterminate="false" />
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_toEndOf="@+id/audioLinearLayout"
-                    android:layout_toRightOf="@+id/audioLinearLayout"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/startTimeLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".05"
-                        android:gravity="start"
-                        android:text="@string/inital_Time"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                    <LinearLayout
-                        android:id="@+id/audioLinearLayout"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp">
-
-                        <ImageButton
-                            android:id="@+id/pauseButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="#000"
-                            android:layout_below="@+id/seekBar1"
-                            android:layout_toEndOf="@+id/textView4"
-                            android:layout_toRightOf="@+id/textView4"
-                            android:onClick="pause"
-                            android:src="@android:drawable/ic_media_pause" />
-
-                        <ImageButton
-                            android:id="@+id/playButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@+id/pewImageButton"
-                            android:layout_toRightOf="@+id/pewImageButton"
-                            android:background="#000"
-                            android:onClick="play"
-                            android:src="@android:drawable/ic_media_play" />
-                    </LinearLayout>
-                    <TextView
-                        android:id="@+id/endTimeLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight=".05"
-                        android:gravity="end"
-                        android:text="@string/inital_Time"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
-                </LinearLayout>
-
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
