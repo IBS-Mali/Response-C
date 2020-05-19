@@ -1,0 +1,194 @@
+{
+      "l1":[{
+        "Q1": {
+          "responses":[true, true, true, true,false],
+          "choises": ["Pratiquer l’hygiène respiratoire pendant l’alimentation  ", "Porter un masque facial", "Se laver les mains avant et après avoir touché le bébé", "Nettoyer en utilisant du savon et de l'eau et désinfecter régulièrement les surfaces touchées par les mains.","Avoir un compagnon de choix présent pendant la délivrance "],
+          "type":2,
+          "label": "Les femmes enceintes sont-elles plus exposées au risque de contracter le Covid19 ? si oui cocher les moyens de précaution?"
+        },
+        "Q2": {
+          "responses":1,
+          "choises": ["Ce coronavirus est apparu en 2019", "C’est le 19e coronavirus connu des scientifiques  ", "Le laboratoire qui l’a identifié était au 19e étage"],
+          "type":1,
+          "label": "Pourquoi il y a le 19 dans covid19 ?"
+        },
+        "Q3": {
+          "responses":[true, true, true, true,true,false],
+          "choises": ["Se laver fréquemment les mains avec une solution hydroalcoolique ou à l’eau et au savon.", "Éviter les contacts proches, se tenir à distance des autres personnes et éviter les endroits bondés.", "Éviter de se toucher les yeux, le nez et la bouche.","Ne pas Respecter les règles d’hygiène respiratoire"],
+          "type":2,
+          "label": "Je suis enceinte. Comment puis-je me protéger contre la COVID-19 ? "
+        },
+        "Q4": {
+          "responses":1,
+          "choises": ["Quelqu’un atteint de la covid-19", "Un animal à cornes", "Un arbre de la foret boréale "],
+          "type":1,
+          "label": "Qu’est-ce qu’un covive est ?"
+        },
+        "Q5": {
+          "responses":[ true, true,true,false],
+          "choises": ["Tirage de lait ", "Reprise de l’allaitement", "Recours à du lait de nourrice","Arrêter l’allaitement"],
+          "type":2,
+          "label": "J’ai la COVID-19 et je ne me sens pas assez bien pour allaiter mon bébé directement. Que puis-je faire ?"
+        }
+      }],
+      "l2":[{
+        "Q1": {
+          "responses":3,
+          "choises": ["N’a jamais entendu parler de la covid-19","Ne travaille pas dans le système de sante ","Ne respecte pas les directives sanitaires" ],
+          "type":1,
+          "label": "Un covidiot est quelqu’un qui  ?"
+        },
+        "Q2": {
+          "responses":[ true, true,true,false],,
+          "choises": ["Toux", "Fièvre", "Mal de gorge", "Diarrhée"],
+          "type":2,
+          "label": "Quels sont les symptômes du covid-19 ?"
+        },
+        "Q3": {
+          "responses":2,
+          "choises": ["Prendre rendez-vous chez votre généraliste ", "Contacter 36061", "Vous rendre à l’urgence directement"],
+          "type":1,
+          "label": "Au cas où vous pensez être atteint du covid-19, vous devez ?"
+        },
+        "Q4": {
+          "responses":[ true, true, true,false] ,
+          "choises": ["Être accompagnée par la personne de son choix pendant l'accouchement ","Des solutions adaptées pour soulager la douleur ", "Nettoyer et désinfecter régulièrement les surfaces qu’elles  ont touchées."],
+          "type":2,
+          "label": "Quels soins devraient être disponibles pendant la grossesse et l’accouchement ?"
+        },
+        "Q5": {
+          "responses":3,
+          "choises": ["Les micro-ondes multiplient la puissance de virus", "Cela rend le masque poreux et inefficace", "Cela comporte un risque d’incendie"],
+          "type":1,
+          "label": "Pourquoi ce n’est pas une bonne idée de stériliser un masque sanitaire dans un four à micro-ondes ?"
+        }
+      }],
+      "l3":[{
+        "Q1":{
+          "responses":1,
+          "choises":[" Il n’existe aucun vaccin contre la COVID-19","La canine est un remède fiable pour le covid-19 ","Les feuilles de baobab est un remède pour le covid-19"],
+          "type":1,
+          "label":"Existe-t-il un vaccin contre la COVID-19 ?"
+        },
+        "Q2":{
+          "responses":4,
+          "choises":["10 jours "," 30 jours","14 jours ","5 jours "],
+          "type":1,
+          "label":"Quel est la durée moyenne d’incubation du Covid-19? "
+        },
+        "Q3":{
+          "responses":1,
+          "choises":["En quatorzaine ","En couvaine","En isolant"],
+          "type":1,
+          "label":"Quel terme est employé actuellement pour désigner les personnes confinées par précaution ?"
+        },
+        "Q4":{
+          "responses":3,
+          "choises":["Un animal a cornes ","Un arbre de la boréale","Quelqu’un atteint de la covid-19"],
+          "type":1,
+          "label":"Qu’est-ce qu’un covive est ?"
+        },
+        "Q5":{
+          "responses":2,
+          "choises":["Une période de 15 jours de confinement au lieu de 40 jours","Une période de confinement en quarantaine","Un huissier charge de vérifier que les gens confines en quarantaine restent à la maison"],
+          "type":1,
+          "label":"Un quarantini est ?"
+        }
+      }],
+      "l4":[{
+        "Q1":{
+          "responses":2,
+          "choises":["Vrai","Faux"],
+          "type":1,
+          "label":"Le pangolin, ce petit mammifère qui a sans doute transmis le coronavirus a l’Homme est une espèce en voie de disparition ?"
+        },
+        "Q2":{
+          "responses":[true,true,true,true,false],
+          "choises":["Les patients avec antécédents cardiovasculaires : hypertension artérielle compliquée, antécédents d’accident vasculaire cérébral ou de coronaropathie, chirurgie cardiaque ","Les diabétiques insulinodépendants non équilibrés ou présentant des complications secondaires à leur pathologie","Les personnes présentant une pathologie chronique respiratoire susceptible de décompenser lors d’une infection virale ","Les malades atteints de cancer sous traitement","Éviter les contacts proches, se tenir à distance des autres personnes et éviter les endroits bondés."],
+          "type":2,
+          "label":"Quels sont les facteurs de risque de développer des formes sévères du covid-19 ?"
+        },
+        "Q3":{
+          "responses":3,
+          "choises":["La pandémie a frappe surtout les économies occidentales","Le coronavirus est activé par la technologie téléphonique 5G chinoise","Il y a un gros laboratoire de virologie à Wuhan, en chine d’où est partie la pandémie"],
+          "type":1,
+          "label":"D’où vient l’idée que le SRAS-Cov-2 responsable de la cov-19 est une arme chinoise crée en laboratoire ?"
+        },
+        "Q4":{
+          "responses":[true,true,false],
+          "choises":["Par des gouttelettes respiratoires produites par une personne qui tousse ou éternue","En touchant des surfaces contaminées par le virus et en se touchant ensuite le visage","Par le regarde de la personne infecter"],
+          "type":2,
+          "label":"Comment la maladie à coronavirus (COVID-19) se transmet-elle ?"
+        },
+        "Q5":{
+          "responses":2,
+          "choises":["40%","60%","50%"],
+          "type":1,
+          "label":"Quel pourcentage d’alcool les solutions hydroalcooliques et les désinfectants doivent-ils contenir pour tuer le virus responsable de la maladie à coronavirus (COVID-19) ?"
+        }
+      }],
+      "l5":[{
+        "Q1":{
+          "responses":[true,true,true,false],
+          "choises":["En se lavant fréquemment les mains avec de l’eau et du savon ou avec un désinfectant pour les mains à base d’alcool","En évitant contact rapproche avec des personnes présentant des symptômes comparables a ceux d’un rhume ou de la grippe","En évitant de se toucher le visage","Par des gouttelettes respiratoires produites par une personne qui tousse ou éternue"],
+          "type":2,
+          "label":"Quelles sont les meilleures manières d’éviter d’attraper la maladie à coronavirus (COVID-19) ?"
+        },
+        "Q2":{
+          "responses":3,
+          "choises":["La mise en place de mécanismes de justice transitionnelle, notamment par l’opérationnalisation de la commission vérité, justice et Réconciliation (CVJR) ","L’élaboration d’une charte Nationale pour la Paix, l’Unité et la Réconciliations Nationale ","Les parties signataires demandent à la classe politique et à la société civile, notamment les organisations de femmes et de jeunes, les medias, les communicateurs traditionnels et les autorités traditionnelles et religieuses, d’apporter leur plein concours à la réalisation des objectifs de l’Accord","La valorisation du statut des autorités traditionnelles "],
+          "type":1,
+          "label":"Quels sera le rôle des partis politique et de la société civile ?"
+        },
+        "Q3":{
+          "responses":[true,true,true,false],
+          "choises":[" Défense et de sécurité","Développement économique. Social et culturel","Réconciliation, justice et questions humanitaires","De soutenir techniquement le processus d’intégration des ex-combattants"],
+          "type":2,
+          "label":"Sélectionnez les sous-comités créés parmi ces éléments ?"
+        },
+        "Q4":{
+          "responses":2,
+          "choises":["20 sous-comités","4 sous-comités","7 sous-comités","13 Sous- comités"],
+          "type":1,
+          "label":"Le comité de suivi de l’Accord sera structuré en combien sous-comités ?"
+        },
+        "Q5":{
+          "responses":[true,true,true,false],
+          "choises":["Défense et de sécurité"," Développement économique. Social et culturel","Réconciliation, justice et questions humanitaires","De soutenir techniquement le processus d’intégration des ex-combattants"],
+          "type":2,
+          "label":"Sélectionnez les sous-comités créés parmi ces éléments ?"
+        }
+      }],
+      "l6":[{
+        "Q1":{
+          "responses":3,
+          "choises":["La revalorisation du rôle des cadis dans l’administration de la justice, notamment en ce qui concerne la médiation civile","L’élaboration d’une charte Nationale pour la Paix, l’Unité et la Réconciliations Nationale ","Le comité de suivi de l’accord désigne un observateur indépendant chargé d’évaluer de manière objective l’Etat de mise en œuvre de l’Accord. Il rend public tous les quatre mois un rapport exhaustif faisant le point de l’exécution des engagements","La bonne gestion du retour des réfugiés et des déplacés et leurs réinsertions"],
+          "type":1,
+          "label":"Quel est le rôle de l’observateur indépendant ?"
+        },
+        "Q2":{
+          "responses":[true,true,true,false],
+          "choises":["La construction d’un hôpital régionale à Kidal et à Ménaka","La réalisation des aéroports","Les axes routiers ","La société civile (en audition)"],
+          "type":2,
+          "label":"Quelles sont les Actions Majeures de développement en matière d’infrastructure à moyen et à long terme ?"
+        },
+        "Q3":{
+          "responses":1,
+          "choises":["Un comité de suivi de l’Accord (CSA) sera créé. Il sera composé de représentants du Gouvernement du Mali, des Mouvements signataires de l’Accord et de la Médiation","Veiller à une meilleure représentation des populations du Nord du Mali dans les Institutions et grands services publics, corps et administration de la république","La création d’un conseil Nation pour la RSS","Progressivité du redéploiement des forces armées et de sécurités reconstituées du Mali "],
+          "type":1,
+          "label":"Qu’est ce qui est prévu pour le suivi de la mise en œuvre de l’accord ?"
+        },
+        "Q4":{
+          "responses":[true,true,false,false],
+          "choises":["L’augmentation du nombre de circonscription électorales et/ ou toutes autres mesures appropriées afin d’amélioré la représentation des populations du Nord du Mali à l’Assemblé Nationale ","L’octroi de sièges aux représentants des notabilités traditionnelles, des femmes et des jeunes au sein de Haut Conseil des Collectivité Territoriales","La création d’un conseil Nation pour la RSS","Progressivité du redéploiement des forces armées et de sécurités reconstituées du Mali "],
+          "type":2,
+          "label":"Comment assurer une meilleure représentation des populations au sein des institutions de l’Etat ?"
+        },
+        "Q5":{
+          "responses":3,
+          "choises":["Kidal"," Gao ","Bamako","Kayes"],
+          "type":1,
+          "label":"Dans quel region du Mali siège le comité de suivi de l'Accord d'Alger ?"
+        }
+      }]
+    },

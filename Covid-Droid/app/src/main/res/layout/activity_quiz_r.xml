@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_game"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp">
+        <LinearLayout
+            android:id="@+id/level_l"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_game"
+            android:layout_weight=".30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LEVEL"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/level_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="sans-serif-smallcaps"
+                android:text="SCORE"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/start1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bn_de"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/start2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bn_de"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/start3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bn_de"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/start4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bn_de"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/start5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bn_de"
+                    android:text="5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="1dp"
+                android:background="#fff">
+                <TextView
+                    android:id="@+id/question_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Question ?"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#5A87AE"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/ch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="A" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+                <CheckBox
+                    android:id="@+id/ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="B" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <CheckBox
+                    android:id="@+id/ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="C" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <CheckBox
+                    android:id="@+id/ch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="D" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rsp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="A" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/rsp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="B" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+                <RadioButton
+                    android:id="@+id/rsp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="C" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+                <RadioButton
+                    android:id="@+id/rsp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/radio_peace"
+                    android:text="D" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_play"
+                android:onClick="startEvaluation"
+                android:layout_marginBottom="10dp"
+                android:text="suivante" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

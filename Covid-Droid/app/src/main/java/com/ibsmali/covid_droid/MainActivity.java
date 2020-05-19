@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.orm.dsl.BuildConfig;
+
 public class MainActivity extends Base  {
 
     private final static String TAG = Constants.getLogTag("MainActivity");
@@ -76,6 +78,13 @@ public class MainActivity extends Base  {
         Intent intent = new Intent(
                 getApplicationContext(),
                 SensibilisationActivity.class);
+        startActivity(intent);
+    }
+
+    public void goto_quiz(View view) {
+        Intent intent = new Intent(
+                getApplicationContext(),
+               ActivityQuiz.class);
         startActivity(intent);
     }
 }

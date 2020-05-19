@@ -1,7 +1,5 @@
 package com.ibsmali.covid_droid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.media.AudioManager;
@@ -13,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -27,7 +26,7 @@ public class Responses extends Base {
 
 
     private final static String TAG = Constants.getLogTag("Responses");
-
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,7 @@ public class Responses extends Base {
         Intent intent = getIntent();
         String q = intent.getStringExtra("question");
         TextView title_resp = findViewById(R.id.title_resp);
-        ImageView imageView = findViewById(R.id.image_view);
+        imageButton = findViewById(R.id.image_view);
         TextView rep = findViewById(R.id.response);
 
 
@@ -45,69 +44,66 @@ public class Responses extends Base {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R1);
             title_resp.setText(R.string.Q1);
-            imageView.setImageResource(R.drawable.orig);
+            imageButton.setImageResource(R.drawable.orig);
         }
         ;
         if (q.equals(Constants.Q2)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R2);
             title_resp.setText(R.string.Q2);
-            imageView.setImageResource(R.drawable.covider);
+            imageButton.setImageResource(R.drawable.covider);
         }
-        ;
         if (q.equals(Constants.Q3)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R3);
             title_resp.setText(R.string.Q3);
-            imageView.setImageResource(R.drawable.simpto);
+            imageButton.setImageResource(R.drawable.simpto);
         }
-        ;
         if (q.equals(Constants.Q4)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R4);
             title_resp.setText(R.string.Q4);
-            imageView.setImageResource(R.drawable.contactt);
+            imageButton.setImageResource(R.drawable.contactt);
         }
-        ;
         if (q.equals(Constants.Q5)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R5);
-            imageView.setImageResource(R.drawable.protect);
+            imageButton.setImageResource(R.drawable.protect);
             title_resp.setText(R.string.Q5);
         }
-        ;
+
         if (q.equals(Constants.Q6)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R6);
             title_resp.setText(R.string.Q6);
-            imageView.setImageResource(R.drawable.inquietude);
+            imageButton.setImageResource(R.drawable.inquietude);
         }
-        ;
+
         if (q.equals(Constants.Q7)) {
             Toast.makeText(this, q, LENGTH_LONG);
             title_resp.setText(R.string.Q7);
             rep.setText(R.string.R7);
-            imageView.setImageResource(R.drawable.foule);
+            imageButton.setImageResource(R.drawable.foule);
         }
         ;
         if (q.equals(Constants.Q8)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R8);
             title_resp.setText(R.string.Q8);
-            imageView.setImageResource(R.drawable.risque);
+            imageButton.setImageResource(R.drawable.risque);
         }
         ;
         if (q.equals(Constants.Q9)) {
             Toast.makeText(this, q, LENGTH_LONG);
             title_resp.setText(R.string.Q9);
             rep.setText(R.string.R9);
-            imageView.setImageResource(R.drawable.temps);
+            imageButton.setImageResource(R.drawable.temps);
         }
         ;
         if (q.equals(Constants.Q10)) {
             Toast.makeText(this, q, LENGTH_LONG);
             title_resp.setText(R.string.Q10);
-            imageView.setImageResource(R.drawable.ani);
+            imageButton.setImageResource(R.drawable.ani);
             rep.setText(R.string.R10);
         }
         ;

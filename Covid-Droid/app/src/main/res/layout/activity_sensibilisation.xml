@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SensibilisationActivity"
-    android:background="@drawable/background_">
+    android:background="@drawable/background">
     <TextView
         android:id="@+id/text"
         style="@style/header_title"
-        android:text="Mode de Sensibilisation sur la COVID-19"
+        android:text="Modes de Sensibilisation sur la COVID-19"
         android:textColor="#fff" />
     <TextView
         android:id="@+id/textView12"
@@ -37,7 +37,7 @@
                 android:onClick="goto_quest"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-                android:text="Question et Reponse de sensibilisation" />
+                android:text="Questions et Reponses de sensibilisation" />
             <Button
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:drawableLeft="@drawable/listener"
                 android:onClick="goto_audio"
                 android:padding="10dp"
-                android:text="Audio de sensilisation" />
+                android:text="Audios de sensilisation" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
