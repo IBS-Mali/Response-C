@@ -28,7 +28,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".quizRActivity"></activity>
-        <activity android:name=".QuizReponse" />
         <activity android:name=".ActivityQuiz" />
 
         <meta-data

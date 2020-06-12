@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/level1"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="140dp"
@@ -56,7 +56,7 @@
                     android:topLeftRadius="180dp"
                     android:topRightRadius="180dp" />
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/level2"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -71,14 +71,14 @@
                     android:layout_marginTop="15dp"
                     android:textColor="#171616"
                     android:topLeftRadius="180dp"
-                    android:topRightRadius="180dp"/>
+                    android:topRightRadius="180dp" />
             </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/level3"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="140dp"
@@ -97,7 +97,7 @@
                 android:topRightRadius="180dp" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/level4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -119,7 +119,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/level5"
                 android:layout_width="wrap_content"
                 android:layout_height="140dp"
                 android:layout_marginTop="15dp"
@@ -138,7 +138,7 @@
                 android:topRightRadius="180dp" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/level6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

@@ -20,6 +20,8 @@ public class Constants {
     public static final String Q10 ="q10";
     public static final String S="s";
     public static final String audio="audio";
+    public static final String LEVEL ="level" ;
+    public static final String CURRENT_LEVEL = "current";
 
     public static final String getLogTag(String activity) {
         return String.format("COVID19_Log-%s", activity);
