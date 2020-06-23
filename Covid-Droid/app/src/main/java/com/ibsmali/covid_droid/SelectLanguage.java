@@ -223,7 +223,11 @@ public class SelectLanguage extends Base {
 
     protected void onStop() {
         super.onStop();
-        mediaPlayer.pause();
+        try{
+            mediaPlayer.pause();
+        } catch (Exception e){
+            Log.d(TAG,e + "fjfjfj");
+        }
         displayMedaPlayerBtn(true);
     }
 

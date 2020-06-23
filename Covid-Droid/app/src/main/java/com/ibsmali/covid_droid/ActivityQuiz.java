@@ -12,6 +12,10 @@ public class ActivityQuiz extends Base {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        setupUI();
+    }
+
+    private void setupUI() {
 
         Button level1 = findViewById(R.id.level1);
         check_level(1, level1);
