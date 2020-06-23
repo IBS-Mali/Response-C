@@ -13,6 +13,10 @@ public class ActivityQuiz extends Base {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        setupUI();
+    }
+
+    private void setupUI() {
     }
 
     public void goto_len1(View view) {

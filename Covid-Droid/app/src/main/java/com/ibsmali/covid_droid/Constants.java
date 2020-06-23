@@ -22,6 +22,8 @@ public class Constants {
     public static final String audio="audio";
     public static final String LEVEL ="level" ;
     public static final String CURRENT_LEVEL = "current";
+    public static final int QTUPE2 =2 ;
+    public static final int QTUPE1=1;
 
     public static final String getLogTag(String activity) {
         return String.format("COVID19_Log-%s", activity);
