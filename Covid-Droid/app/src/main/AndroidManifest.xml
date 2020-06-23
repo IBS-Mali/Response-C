@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".quizRActivity"></activity>
+        <activity android:name=".PlayQuiz"></activity>
         <activity android:name=".ActivityQuiz" />
 
         <meta-data

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialogue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight=".50">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="THE END"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/msgscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score Finale"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:fontFamily="serif-monospace"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nextLevelLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight=".50">
+        <Button
+            android:id="@+id/nextLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_play"
+            android:layout_gravity="center"
+            android:text="Continuer"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/tryLL">
+
+        <Button
+            android:id="@+id/btnTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_play"
+            android:layout_weight=".50"
+            android:text="Réessayer"
+
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/readMore"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:layout_gravity="center"
+            android:text="Lire l'accord"/>
+    </LinearLayout>
+</LinearLayout>
