@@ -1,24 +1,10 @@
 package com.ibsmali.covid_droid;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.nfc.Tag;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import static android.widget.Toast.LENGTH_LONG;
 
@@ -31,7 +17,7 @@ public class Responses extends Base {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_responses);
+        setContentView(R.layout.responses_text_sensib);
 
         Intent intent = getIntent();
         String q = intent.getStringExtra("question");
@@ -63,7 +49,7 @@ public class Responses extends Base {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R4);
             title_resp.setText(R.string.Q4);
-            imageButton.setImageResource(R.drawable.contactt);
+            imageButton.setImageResource(R.drawable.popag);
         }
         if (q.equals(Constants.Q5)) {
             Toast.makeText(this, q, LENGTH_LONG);
@@ -76,21 +62,21 @@ public class Responses extends Base {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R6);
             title_resp.setText(R.string.Q6);
-            imageButton.setImageResource(R.drawable.inquietude);
+            imageButton.setImageResource(R.drawable.risq);
         }
 
         if (q.equals(Constants.Q7)) {
             Toast.makeText(this, q, LENGTH_LONG);
             title_resp.setText(R.string.Q7);
             rep.setText(R.string.R7);
-            imageButton.setImageResource(R.drawable.foule);
+            imageButton.setImageResource(R.drawable.foulle);
         }
         ;
         if (q.equals(Constants.Q8)) {
             Toast.makeText(this, q, LENGTH_LONG);
             rep.setText(R.string.R8);
             title_resp.setText(R.string.Q8);
-            imageButton.setImageResource(R.drawable.risque);
+            imageButton.setImageResource(R.drawable.risqs);
         }
         ;
         if (q.equals(Constants.Q9)) {

@@ -4,11 +4,11 @@
           "responses":[true, true, true, true,false],
           "choises": ["Pratiquer l’hygiène respiratoire pendant l’alimentation  ", "Porter un masque facial", "Se laver les mains avant et après avoir touché le bébé", "Nettoyer en utilisant du savon et de l'eau et désinfecter régulièrement les surfaces touchées par les mains.","Avoir un compagnon de choix présent pendant la délivrance "],
           "type":2,
-          "label": "Les femmes enceintes sont-elles plus exposées au risque de contracter le Covid19 ? si oui cocher les moyens de précaution?"
+          "label": "Les femmes enceintes sont les plus exposées au risque de contracter le Covid19. quel sont  les moyens de précaution?"
         },
         "Q2": {
           "responses":1,
-          "choises": ["Ce coronavirus est apparu en 2019", "C’est le 19e coronavirus connu des scientifiques  ", "Le laboratoire qui l’a identifié était au 19e étage"],
+          "choises": ["Ce coronavirus est apparu en 2019", "C’est le 19e coronavirus connu des scientifiques  ", "Le laboratoire qui l’a identifié était au 19e étage","découvert le 19 mars"],
           "type":1,
           "label": "Pourquoi il y a le 19 dans covid19 ?"
         },
@@ -20,7 +20,7 @@
         },
         "Q4": {
           "responses":1,
-          "choises": ["Quelqu’un atteint de la covid-19", "Un animal à cornes", "Un arbre de la foret boréale "],
+          "choises": ["Quelqu’un atteint de la covid-19", "Un animal à cornes", "Un arbre de la foret boréale ","une fleure"],
           "type":1,
           "label": "Qu’est-ce qu’un covive est ?"
         },
@@ -34,25 +34,25 @@
       "l2":[{
         "Q1": {
           "responses":3,
-          "choises": ["N’a jamais entendu parler de la covid-19","Ne travaille pas dans le système de sante ","Ne respecte pas les directives sanitaires" ],
+          "choises": ["N’a jamais entendu parler de la covid-19","Ne travaille pas dans le système de sante ","Ne respecte pas les directives sanitaires","Qui s'interesse au covid" ],
           "type":1,
-          "label": "Un covidiot est quelqu’un qui  ?"
+          "label": "Un covidiot est quelqu’un qui?"
         },
         "Q2": {
-          "responses":[ true, true,true,false],,
+          "responses":[ true, true,true,false],
           "choises": ["Toux", "Fièvre", "Mal de gorge", "Diarrhée"],
           "type":2,
           "label": "Quels sont les symptômes du covid-19 ?"
         },
         "Q3": {
           "responses":2,
-          "choises": ["Prendre rendez-vous chez votre généraliste ", "Contacter 36061", "Vous rendre à l’urgence directement"],
+          "choises": ["Prendre rendez-vous chez votre généraliste ", "Contacter 36061", "Vous rendre à l’urgence directement", "prendre de l'aspirine"],
           "type":1,
           "label": "Au cas où vous pensez être atteint du covid-19, vous devez ?"
         },
         "Q4": {
           "responses":[ true, true, true,false] ,
-          "choises": ["Être accompagnée par la personne de son choix pendant l'accouchement ","Des solutions adaptées pour soulager la douleur ", "Nettoyer et désinfecter régulièrement les surfaces qu’elles  ont touchées."],
+          "choises": ["Être accompagnée par la personne de son choix pendant l'accouchement ","Des solutions adaptées pour soulager la douleur ", "Nettoyer et désinfecter régulièrement les surfaces qu’elles  ont touchées.","utiliser un mouchoir"],
           "type":2,
           "label": "Quels soins devraient être disponibles pendant la grossesse et l’accouchement ?"
         },
@@ -66,7 +66,9 @@
       "l3":[{
         "Q1":{
           "responses":1,
-          "choises":[" Il n’existe aucun vaccin contre la COVID-19","La canine est un remède fiable pour le covid-19 ","Les feuilles de baobab est un remède pour le covid-19"],
+          "choises":[" Il n’existe aucun vaccin contre la COVID-19",
+            "La canine est un remède fiable pour le covid-19 ",
+            "Les feuilles de baobab est un remède pour le covid-19","de l'aspirine"],
           "type":1,
           "label":"Existe-t-il un vaccin contre la COVID-19 ?"
         },
@@ -74,7 +76,7 @@
           "responses":4,
           "choises":["10 jours "," 30 jours","14 jours ","5 jours "],
           "type":1,
-          "label":"Quel est la durée moyenne d’incubation du Covid-19? "
+          "label":"Quel est la durée moyenne d’incubation du Covid-19 ?"
         },
         "Q3":{
           "responses":1,
@@ -84,13 +86,13 @@
         },
         "Q4":{
           "responses":3,
-          "choises":["Un animal a cornes ","Un arbre de la boréale","Quelqu’un atteint de la covid-19"],
+          "choises":["Un animal à cornes ","Un arbre de la boréale","Quelqu’un atteint de la covid-19","un porteur saint"],
           "type":1,
-          "label":"Qu’est-ce qu’un covive est ?"
+          "label":"Qu’est-ce qu’un covive ?"
         },
         "Q5":{
           "responses":2,
-          "choises":["Une période de 15 jours de confinement au lieu de 40 jours","Une période de confinement en quarantaine","Un huissier charge de vérifier que les gens confines en quarantaine restent à la maison"],
+          "choises":["Une période de 15 jours de confinement au lieu de 40 jours","Une période de confinement en quarantaine","Un huissier charge de vérifier que les gens confines en quarantaine restent à la maison","40 semaines"],
           "type":1,
           "label":"Un quarantini est ?"
         }
@@ -115,14 +117,14 @@
           "label":"D’où vient l’idée que le SRAS-Cov-2 responsable de la cov-19 est une arme chinoise crée en laboratoire ?"
         },
         "Q4":{
-          "responses":[true,true,false],
-          "choises":["Par des gouttelettes respiratoires produites par une personne qui tousse ou éternue","En touchant des surfaces contaminées par le virus et en se touchant ensuite le visage","Par le regarde de la personne infecter"],
+          "responses":[true,true,false,false],
+          "choises":["Par des gouttelettes respiratoires produites par une personne qui tousse ou éternue","En touchant des surfaces contaminées par le virus et en se touchant ensuite le visage","Par le regarde de la personne infecter","en jouant avec la personne atteinte "],
           "type":2,
           "label":"Comment la maladie à coronavirus (COVID-19) se transmet-elle ?"
         },
         "Q5":{
           "responses":2,
-          "choises":["40%","60%","50%"],
+          "choises":["40%","60%","50%","80%"],
           "type":1,
           "label":"Quel pourcentage d’alcool les solutions hydroalcooliques et les désinfectants doivent-ils contenir pour tuer le virus responsable de la maladie à coronavirus (COVID-19) ?"
         }
@@ -136,59 +138,59 @@
         },
         "Q2":{
           "responses":3,
-          "choises":["La mise en place de mécanismes de justice transitionnelle, notamment par l’opérationnalisation de la commission vérité, justice et Réconciliation (CVJR) ","L’élaboration d’une charte Nationale pour la Paix, l’Unité et la Réconciliations Nationale ","Les parties signataires demandent à la classe politique et à la société civile, notamment les organisations de femmes et de jeunes, les medias, les communicateurs traditionnels et les autorités traditionnelles et religieuses, d’apporter leur plein concours à la réalisation des objectifs de l’Accord","La valorisation du statut des autorités traditionnelles "],
+          "choises":["La personne qui n’a pas de symptômes","La personne qui n’est pas malade ","La première personne infectée par une maladie dans un lieu ","La valorisation du statut des autorités traditionnelles "],
           "type":1,
-          "label":"Quels sera le rôle des partis politique et de la société civile ?"
+          "label":"Qu’est-ce qu’un patient zéro ?"
         },
         "Q3":{
-          "responses":[true,true,true,false],
-          "choises":[" Défense et de sécurité","Développement économique. Social et culturel","Réconciliation, justice et questions humanitaires","De soutenir techniquement le processus d’intégration des ex-combattants"],
-          "type":2,
-          "label":"Sélectionnez les sous-comités créés parmi ces éléments ?"
+          "responses":4,
+          "choises":["Maryland ","Michigan","Louisiane","Monowi"],
+          "type":1,
+          "label":"Quel est le nom du village au Etats-Unis qui n’a été touche par la pandémie de la Covid-19 ?\t"
         },
         "Q4":{
           "responses":2,
-          "choises":["20 sous-comités","4 sous-comités","7 sous-comités","13 Sous- comités"],
+          "choises":["le 20 Janvier","le 26 Mars 2020","le 08 février 2020 ","17 Décembre"],
           "type":1,
-          "label":"Le comité de suivi de l’Accord sera structuré en combien sous-comités ?"
+          "label":"Quel est la date de découverte de la pandémie de la covid-19 au Mali ?"
         },
         "Q5":{
-          "responses":[true,true,true,false],
-          "choises":["Défense et de sécurité"," Développement économique. Social et culturel","Réconciliation, justice et questions humanitaires","De soutenir techniquement le processus d’intégration des ex-combattants"],
-          "type":2,
-          "label":"Sélectionnez les sous-comités créés parmi ces éléments ?"
+          "responses":2,
+          "choises":["Maroc","Algérie","Tunisie","Senegal"],
+          "type":1,
+          "label":"Dans quel pays en Afrique du Nord une radio a été créer en période de la pandémie (covid-19) et porte le nom Corona ?"
         }
       }],
       "l6":[{
         "Q1":{
-          "responses":3,
-          "choises":["La revalorisation du rôle des cadis dans l’administration de la justice, notamment en ce qui concerne la médiation civile","L’élaboration d’une charte Nationale pour la Paix, l’Unité et la Réconciliations Nationale ","Le comité de suivi de l’accord désigne un observateur indépendant chargé d’évaluer de manière objective l’Etat de mise en œuvre de l’Accord. Il rend public tous les quatre mois un rapport exhaustif faisant le point de l’exécution des engagements","La bonne gestion du retour des réfugiés et des déplacés et leurs réinsertions"],
+          "responses":2,
+          "choises":["Jusqu’à 10 minutes","Jusqu’à 3 heures ","Jusqu’à 7 jours ","Jusqu’à 20 jours"],
           "type":1,
-          "label":"Quel est le rôle de l’observateur indépendant ?"
+          "label":"Combien de temps le virus peut-il suivre sur une table ou une poignée de porte ?"
         },
         "Q2":{
-          "responses":[true,true,true,false],
-          "choises":["La construction d’un hôpital régionale à Kidal et à Ménaka","La réalisation des aéroports","Les axes routiers ","La société civile (en audition)"],
-          "type":2,
-          "label":"Quelles sont les Actions Majeures de développement en matière d’infrastructure à moyen et à long terme ?"
+          "responses":2,
+          "choises":["Deux fois plus que la grippe","Dix fois que la grippe ","Cent fois plus que la grippe","Trois fois plus que la grippe"],
+          "type":1,
+          "label":"Combien de fois le covid-19 tue plus que la grippe ??"
         },
         "Q3":{
           "responses":1,
-          "choises":["Un comité de suivi de l’Accord (CSA) sera créé. Il sera composé de représentants du Gouvernement du Mali, des Mouvements signataires de l’Accord et de la Médiation","Veiller à une meilleure représentation des populations du Nord du Mali dans les Institutions et grands services publics, corps et administration de la république","La création d’un conseil Nation pour la RSS","Progressivité du redéploiement des forces armées et de sécurités reconstituées du Mali "],
+          "choises":["des difficultés respiratoires","des vimissements"," une Toux sèche","Mal de "],
           "type":1,
-          "label":"Qu’est ce qui est prévu pour le suivi de la mise en œuvre de l’accord ?"
+          "label":"Quel est le symptôme qui peut permettre de différencier la covid-19 d’une grippe ?"
         },
         "Q4":{
-          "responses":[true,true,false,false],
-          "choises":["L’augmentation du nombre de circonscription électorales et/ ou toutes autres mesures appropriées afin d’amélioré la représentation des populations du Nord du Mali à l’Assemblé Nationale ","L’octroi de sièges aux représentants des notabilités traditionnelles, des femmes et des jeunes au sein de Haut Conseil des Collectivité Territoriales","La création d’un conseil Nation pour la RSS","Progressivité du redéploiement des forces armées et de sécurités reconstituées du Mali "],
-          "type":2,
-          "label":"Comment assurer une meilleure représentation des populations au sein des institutions de l’Etat ?"
+          "responses":[2],
+          "choises":[" les jeunes enfants","les hommes âgés de  60 ans et plus  ","les sportifs","les femmes"],
+          "type":1,
+          "label":"Quel est la population la plus risque par le covid ?"
         },
         "Q5":{
           "responses":3,
-          "choises":["Kidal"," Gao ","Bamako","Kayes"],
+          "choises":["le faisan"," le panda ","le pangolin","le serpent"],
           "type":1,
-          "label":"Dans quel region du Mali siège le comité de suivi de l'Accord d'Alger ?"
+          "label":"Quel est animal soupçonne-t-on d’avoir transmis le covid-19 a l’homme ?"
         }
       }]
-    },
+    }

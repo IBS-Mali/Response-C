@@ -9,7 +9,7 @@ public class SensibilisationActivity extends Base {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sensibilisation);
+        setContentView(R.layout.menu_sensib);
     }
     public void goto_quest (View view){
 

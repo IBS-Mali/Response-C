@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.orm.dsl.BuildConfig;
 
-public class MainActivity extends Base  {
+public class HomeActivity extends Base  {
 
     private final static String TAG = Constants.getLogTag("MainActivity");
 
@@ -14,7 +14,7 @@ public class MainActivity extends Base  {
     //pour onclick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home);
     }
 
     public void goto_map(View view) {
@@ -26,7 +26,7 @@ public class MainActivity extends Base  {
     }
     public void goto_call(View view) {
         //finish();
-        callUrgencyDialog(MainActivity.this);
+        callUrgencyDialog(HomeActivity.this);
     }
 
     public void goto_auto_sensib(View view) {

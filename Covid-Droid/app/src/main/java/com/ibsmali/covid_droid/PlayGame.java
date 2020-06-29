@@ -23,9 +23,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-public class PlayQuiz extends Base{
-
-    private static final String TAG = Constants.getLogTag("PlayQuiz");
+public class PlayGame extends Base{
+    private static final String TAG = Constants.getLogTag("PlayQuiz ");
     private int level;
     private int type;
     private RadioButton rsp1;
@@ -36,7 +35,6 @@ public class PlayQuiz extends Base{
     private CheckBox checkBoxCh2;
     private CheckBox checkBoxCh3;
     private CheckBox checkBoxCh4;
-    private JSONArray choises;
     private JSONObject qJsonObject;
     private int nbQ = 0;
 
@@ -45,53 +43,52 @@ public class PlayQuiz extends Base{
     private int scoreQ3 = -1;
     private int scoreQ4 = -1;
     private int scoreQ5 = -1;
-    private Button start1;
-    private Button start2;
-    private Button start3;
-    private Button start4;
-    private Button start5;
+    private Button start;
+    //private Button start2;
+    // private Button start3;
+    //private Button start4;
+    //private Button start5;
     private RadioGroup radioGroup;
 
     private ArrayList<Integer> list_q;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_r);
+        setContentView(R.layout.play_game);
         Bundle extras = getIntent().getExtras();
         level = extras.getInt(Constants.LEVEL);
-        TextView levelV = findViewById(R.id.level_v);
-
-        start1 = findViewById(R.id.start1);
-        start2 = findViewById(R.id.start2);
-        start3 = findViewById(R.id.start3);
-        start4 = findViewById(R.id.start4);
-        start5 = findViewById(R.id.start5);
-        levelV.setText("LEVEL " + level);
+        TextView levelV = findViewById(R.id.start);
+        start = findViewById(R.id.start);
+        // start2 = findViewById(R.id.start2);
+        // start3 = findViewById(R.id.start3);
+        //start4 = findViewById(R.id.start4);
+        //start5 = findViewById(R.id.start5);
+        levelV.setText("" + level);
 
         list_q =  makeQuestion();
         playGame(nbQ);
 
     }
 
-    public ArrayList<Integer> makeQuestion() {
+    private ArrayList<Integer> makeQuestion() {
         ArrayList<Integer> number = new ArrayList<Integer>();
         for (int i = 1; i <= 5; ++i) number.add(i);
         Collections.shuffle(number);
         return number;
     }
-
     public void  playGame (int nbQ) {
         //        Toast.makeText(getApplicationContext(), "nbQ : " + nbQ + "list_q.get(nbQ) " + list_q.get(nbQ), Toast.LENGTH_LONG).show();
         try {
-            JSONObject obj = new JSONObject(loadJSONFromAsset());
-            JSONArray qLevel=obj.getJSONArray("l" + level);
+            JSONObject obj = new JSONObject();
+            JSONArray qLevel = obj.getJSONArray("l" + level);
             JSONObject c = qLevel.getJSONObject(new Random().nextInt(qLevel.length()));
             qJsonObject = c.getJSONObject("Q" + list_q.get(nbQ));
             TextView labelQ = findViewById(R.id.question_label);
             labelQ.setText(qJsonObject.getString("label"));
             type = qJsonObject.getInt("type");
-            choises = qJsonObject.getJSONArray("choises");
+            JSONArray choises = qJsonObject.getJSONArray("choises");
             radioGroup = findViewById(R.id.radio_group);
             radioGroup.clearCheck();
             LinearLayout checkBox = findViewById(R.id.checkBox);
@@ -128,9 +125,7 @@ public class PlayQuiz extends Base{
         }
     }
 
-
     private void evaluateGuiCheck() throws JSONException {
-
         if (type == Constants.QTUPE1) {
             int response = qJsonObject.getInt("responses");
             int ch = -1;
@@ -171,30 +166,49 @@ public class PlayQuiz extends Base{
             nbQ++;
             playGame(nbQ);
         } else {
-            final Dialog endGameDialog = new Dialog(PlayQuiz.this,  R.style.hidetitle);
+            final Dialog endGameDialog = new Dialog(PlayGame.this,  R.style.hidetitle);
             endGameDialog.setCancelable(false);
             endGameDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            endGameDialog.setContentView(R.layout.end_game);
+            endGameDialog.setContentView(R.layout.quiz_end);
             endGameDialog.show();
 
             TextView msgScore = endGameDialog.findViewById(R.id.msgscore);
             TextView msg = endGameDialog.findViewById(R.id.msg);
+            TextView msg_end = endGameDialog.findViewById(R.id.msg_end);
 
-            LinearLayout TryLL = endGameDialog.findViewById(R.id.tryLL);
+            LinearLayout tryLL = endGameDialog.findViewById(R.id.tryLL);
             LinearLayout nextLevelLy = endGameDialog.findViewById(R.id.nextLevelLL);
+            LinearLayout endLevelLL = endGameDialog.findViewById(R.id.endLevelLL);
 
             msgScore.setText("SCORE FINALE : " + result() + "/" + 5);
 
+            endLevelLL.setVisibility(View.GONE);
+            tryLL.setVisibility(View.GONE);
+            nextLevelLy.setVisibility(View.GONE);
+
             if (result() > 3) {
-                TryLL.setVisibility(View.GONE);
-                msg.setText("Felicitation !");
-                final SharedPreferences.Editor editor = sharedPrefs.edit();
-                editor.putInt(Constants.CURRENT_LEVEL, level + 1);
-                editor.apply();
+                if (level < 6) {
+                    msg.setText("Felicitation !");
+                    nextLevelLy.setVisibility(View.VISIBLE);
+                    final SharedPreferences.Editor editor = sharedPrefs.edit();
+                    editor.putInt(Constants.CURRENT_LEVEL, level + 1);
+                    editor.apply();
+                } else {
+                    msg_end.setText("Fin de la partie !");
+                    endLevelLL.setVisibility(View.VISIBLE);
+                }
             } else {
                 msg.setText("Perdue !");
-                nextLevelLy.setVisibility(View.GONE);
+                tryLL.setVisibility(View.VISIBLE);
             }
+            Button endLevel = endGameDialog.findViewById(R.id.endLevel);
+            endLevel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    endGameDialog.dismiss();
+                    finish();
+                }
+            });
             Button btnTry = endGameDialog.findViewById(R.id.btnTry);
             btnTry.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -203,7 +217,7 @@ public class PlayQuiz extends Base{
                     finish();
                     Intent intent = new Intent(
                             getApplicationContext(),
-                            PlayQuiz.class);
+                            PlayGame.class);
                     intent.putExtra(Constants.LEVEL, level);
                     startActivity(intent);
                 }
@@ -216,7 +230,7 @@ public class PlayQuiz extends Base{
                     finish();
                     Intent intent = new Intent(
                             getApplicationContext(),
-                            PlayQuiz.class);
+                            PlayGame.class);
                     intent.putExtra(Constants.LEVEL, level + 1);
                     startActivity(intent);
                 }
@@ -239,31 +253,25 @@ public class PlayQuiz extends Base{
     public int result () {
         return scoreQ1 + scoreQ2 + scoreQ3 + scoreQ4 + scoreQ5;
     }
-
-    public void refreshScore(int val) {
+    private void refreshScore(int val) {
         if (nbQ == 0) { scoreQ1 = val; }
         if (nbQ == 1) { scoreQ2 = val; }
         if (nbQ == 2) { scoreQ3 = val; }
         if (nbQ == 3) { scoreQ4 = val; }
         if (nbQ == 4) { scoreQ5 = val; }
     }
-
     public void refreshScoreUI() {
-        updateScore(start1, scoreQ1);
-        updateScore(start2, scoreQ2);
-        updateScore(start3, scoreQ3);
-        updateScore(start4, scoreQ4);
-        updateScore(start5, scoreQ5);
+        updateScore(start, scoreQ1);
     }
 
-    public void updateScore(Button start, int scoreQ) {
+    private void updateScore(Button start, int scoreQ5) {
+        int scoreQ = 0;
         if (scoreQ == 1){
-            start.setBackgroundResource(R.drawable.bn_green);
+            start.setText(String.format(nbQ + "/5" ));
         } else if (scoreQ == 0){
-            start.setBackgroundResource(R.drawable.bn_red);
+            start.setText(String.format(nbQ + "/5" ));
         }
     }
-
     public void startEvaluation(View view) {
         try {
             evaluateGuiCheck();

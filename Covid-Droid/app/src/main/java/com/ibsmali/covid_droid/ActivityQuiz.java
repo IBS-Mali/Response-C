@@ -11,9 +11,21 @@ public class ActivityQuiz extends Base {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.menu_level);
         setupUI();
+
+        Button cancel = findViewById(R.id.cancel);
+        cancel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     private void setupUI() {
 
@@ -34,18 +46,18 @@ public class ActivityQuiz extends Base {
 
         int current_level = sharedPrefs.getInt(Constants.CURRENT_LEVEL, 1);
         if (current_level < el){
-            level.setBackgroundResource(R.drawable.ani);
+            level.setBackgroundResource(R.drawable.assa);
             level.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(ActivityQuiz.this,"Non debloqué.", Toast.LENGTH_SHORT).show();
                 }});
         } else {
-            level.setBackgroundResource(R.drawable.ani);
+            level.setBackgroundResource(R.drawable.assa);
             level.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), PlayQuiz.class);
+                    Intent intent = new Intent(getApplicationContext(), PlayGame.class);
                     intent.putExtra(Constants.LEVEL, el);
                     startActivity(intent);
                 }
@@ -55,7 +67,7 @@ public class ActivityQuiz extends Base {
     public void goto_len1(View view) {
         Intent intent = new Intent(
                 getApplicationContext(),
-                PlayQuiz.class);
+                PlayGame.class);
         startActivity(intent);
     }
 

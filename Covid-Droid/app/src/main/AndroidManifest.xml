@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PlayQuiz"></activity>
+        <activity android:name=".PlayGame" />
         <activity android:name=".ActivityQuiz" />
 
         <meta-data
@@ -43,7 +43,7 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.ibsmali" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

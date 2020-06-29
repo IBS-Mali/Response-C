@@ -7,8 +7,8 @@ package com.ibsmali.covid_droid;
 
 public class Constants {
 
-    static int QTUPE1 = 1;
-    static int QTUPE2 = 2;
+    public static final String CURRENT_LEVEL = "current_level";
+    public static final String LEVEL ="level" ;
 
     public static final String Q1 = "q1";
     public static final String Q2 = "q2";
@@ -22,14 +22,12 @@ public class Constants {
     public static final String Q10 ="q10";
     public static final String S="s";
 
-    public static final String CURRENT_LEVEL = "current_level";
     public static final String SONG = "song_on";
-    public static final String LEVEL = "level";
     public static final String audio="audio";
-//    public static final String LEVEL ="level" ;
-//    public static final String CURRENT_LEVEL = "current";
-//    public static final int QTUPE2 =2 ;
-//    public static final int QTUPE1=1;
+
+
+    public static final int QTUPE2 =2 ;
+    public static final int QTUPE1=1;
 
     public static final String getLogTag(String activity) {
         return String.format("COVID19_Log-%s", activity);
